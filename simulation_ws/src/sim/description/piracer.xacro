@@ -669,6 +669,7 @@
   <!-- camera -->
   <gazebo reference="camera">
     <sensor type="camera" name="camera_sensor">
+      <visualize>false</visualize>
       <update_rate>30.0</update_rate>
       <always_on>1</always_on>
 
