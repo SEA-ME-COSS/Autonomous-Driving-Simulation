@@ -1,9 +1,8 @@
 # PiRacer Simulation with ROS2 and Gazebo
 
-<div width="100%" align="center">
-    <img width="49%" src="/assets/throttle.gif">
-    <img width="49%" src="/assets/steering.gif">
-</div>
+| ![Throttle](/assets/throttle.gif) | ![Steering](/assets/steering.gif) |
+|:---:|:---:|
+| Throttle | Steering |
 
 This repo is for PiRacer Simulation with ROS2 and Gazebo
 
