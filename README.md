@@ -15,7 +15,7 @@ The idea is to utilize this repository as a template for **digital twin** resear
 |:---:|:---:|
 | Throttle | Steering |
 
-## Contents
+## ROS2 Packages
 
 ```shell
 ./
@@ -26,17 +26,18 @@ The idea is to utilize this repository as a template for **digital twin** resear
      └── teleop     # Remote control example including a controller and a receiver
 ```
 
-Put communication img here
-
 ## Requirements
 
-ros2, gazebo, pygame, piracer
+Before using this package, ensure the following prerequisites are installed: `Gazebo 11` with `ROS2 Foxy` for control, `pygame` Python library for keyboard input, and the `piracer` library for physical Piracer control.
 
-Laptop_Ubuntu20.04
-RaspberryPi_Ubuntu20.04
+-
+-
+-
+-
+
+This package has been developed and tested on both local machines and Raspberry Pi 4, using Ubuntu 20.04.
 
 ## Usage
-
 
 ```bash
 # comment
