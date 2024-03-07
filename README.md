@@ -5,6 +5,8 @@
     <img width="49%" src="/images/model.png">
 </div>
 
+---
+
 This repository provides tools and examples for controlling and experimenting with **PiRacer model vehicle** in Gazebo. The Gazebo model, designed to match the hardware specifications of PiRacer, can be controlled via ROS2 topic communication. The included teleoperation example is a simple demonstration using the WASD keys on the keyboard, allowing simultaneous control of both the real PiRacer and the PiRacer in Gazebo.
 
 The idea is to utilize this repository as a template for **digital twin** research. By equipping PiRacer with sensors such as odometer, IMU, LiDAR, etc., and implementing closed-loop feedback control, it would be possible to more accurately replicate the behavior of the real-world PiRacer in Gazebo.
@@ -43,4 +45,4 @@ sudo ~~~
 
 ## References
 
-- waveshare piracer
+- [Waveshare PiRacer](https://www.waveshare.com/wiki/PiRacer_AI_Kit)
