@@ -5,28 +5,42 @@
     <img width="49%" src="/images/model.png">
 </div>
 
+This repository provides tools and examples for controlling and experimenting with **PiRacer model vehicle** in Gazebo. The Gazebo model, designed to match the hardware specifications of PiRacer, can be controlled via ROS2 topic communication. The included teleoperation example is a simple demonstration using the WASD keys on the keyboard, allowing simultaneous control of both the real PiRacer and the PiRacer in Gazebo.
 
-| ![Throttle](/assets/throttle.gif) | ![Steering](/assets/steering.gif) |
+The idea is to utilize this repository as a template for **digital twin** research. By equipping PiRacer with sensors such as odometer, IMU, LiDAR, etc., and implementing closed-loop feedback control, it would be possible to more accurately replicate the behavior of the real-world PiRacer in Gazebo.
+
+| ![Throttle](/images/throttle.gif) | ![Steering](/images/steering.gif) |
 |:---:|:---:|
 | Throttle | Steering |
 
-This repo is for PiRacer Simulation with ROS2 and Gazebo
+## Contents
 
-## title
+```shell
+./
+ ├── simulation_ws/src/
+ │   └── sim        # Description and launch file for PiRacer model
+ │
+ └── teleoperation_ws/src/
+     └── teleop     # Remote control example including a controller and a receiver
+```
+
+Put communication img here
+
+## Requirements
+
+ros2, gazebo, pygame, piracer
 
 Laptop_Ubuntu20.04
 RaspberryPi_Ubuntu20.04
+
+## Usage
+
 
 ```bash
 # comment
 sudo ~~~
 ```
 
-// ![modeling](./modeling.png)
+## References
 
-0. playing video
-1. intro (explain what this is, how can it be used, what can be done in the future)
-2. folder structure
-3. setting
-4. usage
-5. references
+- waveshare piracer
