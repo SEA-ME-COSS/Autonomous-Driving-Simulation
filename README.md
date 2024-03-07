@@ -28,11 +28,15 @@ The idea is to utilize this repository as a template for **digital twin** resear
 
 ## Requirements
 
-Before using this package, ensure the following prerequisites are installed.
+Before using this package, ensure the following prerequisites are installed:
 
-**Local**: [Gazebo 11](https://fdeantoni.medium.com/ros2-dev-with-gazebo-11-3f1795bba33), [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [pygame](https://pypi.org/project/pygame/) (keyboard input)
-
-**Raspberry Pi**: [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [piracer](https://github.com/twyleg/piracer_py) (physical PiRacer control)
+| Device           | Software/Framework                                                                 | Functionality              |
+|------------------|------------------------------------------------------------------------------------|----------------------------|
+| **Local**        | [Gazebo 11](https://fdeantoni.medium.com/ros2-dev-with-gazebo-11-3f1795bba33)      | Simulation environment     |
+| **Local**        | [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) | Robotics middleware        |
+| **Local**        | [pygame](https://pypi.org/project/pygame/)                                         | Keyboard input for control |
+| **Raspberry Pi** | [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) | Robotics middleware        |
+| **Raspberry Pi** | [piracer](https://github.com/twyleg/piracer_py)                                    | Physical PiRacer control   |
 
 This package has been developed and tested on both local machine and Raspberry Pi 4, using Ubuntu 20.04.
 
@@ -76,11 +80,11 @@ ros2 run teleop controller
 
 When you run the controller, a small pygame window like the following will appear.
 
-<div width="100%" align="center"><img src="/images/controller.png" align="center" width="50%"></div>
+<div width="100%" align="center"><img src="/images/controller.png" align="center" width="30%"></div>
 
 Click on this window and press the WASD keys on the keyboard. Observe the movement of both the Gazebo PiRacer and the physical PiRacer.
 
-Depending on the purpose, you can choose to use either the Gazebo Pyrealsense or the physical Pyrealsense. Additionally, try viewing the camera information from the Pyrealsense mounted on the Pyrealsense using RViz2. There are many things you can try with this simulation.
+Design various experiments and developments using the Gazebo PiRacer. This package provides an example with the PiRacer camera. Check the view of the PiRacer's camera using rviz. For instance, you can use this image data to implement autonomous driving in the simulation.
 
 ## References
 
