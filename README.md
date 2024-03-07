@@ -88,7 +88,7 @@ Click on this window and press the WASD keys on the keyboard. Observe the moveme
 
 Design various experiments and developments using the Gazebo PiRacer. This package provides an example with the PiRacer camera. Check the view of the PiRacer's camera using **RViz2**. For instance, you can use this image data to implement autonomous driving in the simulation.
 
-<div width="100%" align="center"><img src="/images/camera.png" align="center" width="100%"></div>
+<div width="100%" align="center"><img src="/images/camera.png" align="center" width="70%"></div>
 
 ## References
 
