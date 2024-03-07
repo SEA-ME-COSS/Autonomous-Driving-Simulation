@@ -28,16 +28,59 @@ The idea is to utilize this repository as a template for **digital twin** resear
 
 ## Requirements
 
-Before using this package, ensure the following prerequisites are installed: [Gazebo 11](https://fdeantoni.medium.com/ros2-dev-with-gazebo-11-3f1795bba33) simulator with [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [pygame](https://pypi.org/project/pygame/) Python library for keyboard input, and the [piracer](https://github.com/twyleg/piracer_py) library for physical Piracer control.
+Before using this package, ensure the following prerequisites are installed.
 
-This package has been developed and tested on both local machines and Raspberry Pi 4, using Ubuntu 20.04.
+**Local**: [Gazebo 11](https://fdeantoni.medium.com/ros2-dev-with-gazebo-11-3f1795bba33), [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [pygame](https://pypi.org/project/pygame/) (keyboard input)
+
+**Raspberry Pi**: [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html), [piracer](https://github.com/twyleg/piracer_py) (physical PiRacer control)
+
+This package has been developed and tested on both local machine and Raspberry Pi 4, using Ubuntu 20.04.
 
 ## Usage
 
+### 1. Launch Gazebo Simulator
+
+First, change the `gazebo_model_path` in the **package.xml** located in `simulation_ws/src/sim` to suit your local environment.
+
 ```bash
-# comment
-sudo ~~~
+# Local
+cd simulation_ws
+colcon build
+
+source install/local_setup.bash
+ros2 launch sim sim.launch.py
 ```
+
+You should see the PiRacer model inside the Gazebo simulation window.
+
+### 2. Run Teleoperation Receiver
+
+```bash
+# Raspberry Pi
+cd teleoperation_ws
+colcon build
+
+source install/local_setup.bash
+ros2 run teleop receiver
+```
+
+### 3. Run Teleoperation Controller
+
+```bash
+# Local
+cd teleoperation_ws
+
+source install/local_setup.bash
+ros2 run teleop controller
+```
+
+When you run the controller, a small pygame window like the following will appear.
+
+<div width="100%" align="center"><img src="/images/controller.png" align="center" width="50%"></div>
+
+Click on this window and press the WASD keys on the keyboard. Observe the movement of both the Gazebo PiRacer and the physical PiRacer.
+
+Depending on the purpose, you can choose to use either the Gazebo Pyrealsense or the physical Pyrealsense. Additionally, try viewing the camera information from the Pyrealsense mounted on the Pyrealsense using RViz2. There are many things you can try with this simulation.
 
 ## References
 
