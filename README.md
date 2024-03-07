@@ -30,10 +30,10 @@ The idea is to utilize this repository as a template for **digital twin** resear
 
 Before using this package, ensure the following prerequisites are installed: `Gazebo 11` with `ROS2 Foxy` for control, `pygame` Python library for keyboard input, and the `piracer` library for physical Piracer control.
 
--
--
--
--
+- [ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+- [Gazebo 11](https://fdeantoni.medium.com/ros2-dev-with-gazebo-11-3f1795bba33)
+- [pygame](https://pypi.org/project/pygame/)
+- [piracer](https://github.com/twyleg/piracer_py)
 
 This package has been developed and tested on both local machines and Raspberry Pi 4, using Ubuntu 20.04.
 
@@ -47,3 +47,5 @@ sudo ~~~
 ## References
 
 - [Waveshare PiRacer](https://www.waveshare.com/wiki/PiRacer_AI_Kit)
+- [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html)
+- [Gazebo](https://classic.gazebosim.org/)
