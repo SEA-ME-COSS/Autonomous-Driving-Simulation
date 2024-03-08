@@ -82,7 +82,7 @@ When you run the controller, a small pygame window like the following will appea
 
 <div width="100%" align="center"><img src="/images/controller.png" align="center" width="30%"></div>
 
-Click on this window and press the WASD keys on the keyboard. Observe the movement of both the Gazebo PiRacer and the physical PiRacer.
+Click on this window and press the WASD keys on the keyboard. Observe the movement of both Gazebo PiRacer and physical PiRacer.
 
 ## Note
 
