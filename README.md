@@ -86,7 +86,7 @@ Click on this window and press the WASD keys on the keyboard. Observe the moveme
 
 ## Note
 
-The communication between the controller node and the receiver node is machine-to-machine. Make sure that local machine and Raspberry Pi are connected to the same WLAN. If connection is not possible, disable the firewall using the following command.
+The communication between the controller node and the receiver node is machine-to-machine. Make sure that local machine and Raspberry Pi are connected to the same WLAN. If connection is not successful, disable the firewall using the following command.
 
 ```bash
 # Local & Raspberry Pi
