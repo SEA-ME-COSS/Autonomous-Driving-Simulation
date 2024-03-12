@@ -44,7 +44,7 @@ This package has been developed and tested on both local machine and Raspberry P
 
 ### 1. Launch Gazebo Simulator
 
-First, change the `gazebo_model_path` in the **package.xml** located in `simulation_ws/src/sim` to suit your local environment.
+❗First, change the `gazebo_model_path` in the **package.xml** located in `simulation_ws/src/sim` to suit your local environment.
 
 ```bash
 # Local
