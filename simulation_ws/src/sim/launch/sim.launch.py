@@ -14,7 +14,7 @@ import xacro
 def generate_launch_description():
     robot_file = "piracer.xacro"
     package_name = "sim"
-    world_file_name = "empty_sky.world"
+    world_file_name = "map.world"
 
     pkg_path = os.path.join(get_package_share_directory(package_name))
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')

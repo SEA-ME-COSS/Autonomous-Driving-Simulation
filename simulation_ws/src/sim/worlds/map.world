@@ -1,7 +1,19 @@
-<?xml version='1.0'?>
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+    </scene>
 
-<sdf version='1.5'>
-   <model name="map">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="map">
       <static>true</static>
       <link name="link">
          <collision name="collision">
@@ -37,5 +49,6 @@
             </material>
          </visual>
       </link>
-   </model>
+    </model>
+  </world>
 </sdf>
