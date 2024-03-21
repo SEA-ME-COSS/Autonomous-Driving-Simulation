@@ -15,6 +15,7 @@
 
     <model name="map">
       <static>true</static>
+      <pose>3.421875 2.338125 0 0 0 0</pose>
       <link name="link">
          <collision name="collision">
             <geometry>
