@@ -1,55 +1,147 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.5">
-  <world name="default">
-    <scene>
+   <world name="default">
+      <scene>
       <sky>
-        <clouds>
-          <speed>12</speed>
-        </clouds>
+         <clouds>
+            <speed>12</speed>
+         </clouds>
       </sky>
-    </scene>
+      </scene>
 
-    <include>
+      <include>
       <uri>model://sun</uri>
-    </include>
+      </include>
 
-    <model name="map">
-      <static>true</static>
-      <pose>3.421875 2.338125 0 0 0 0</pose>
-      <link name="link">
-         <collision name="collision">
-            <geometry>
-               <plane>
-                  <normal>0 0 1</normal>
-                  <size>7.296875 5.621875</size>
-               </plane>
-            </geometry>
-            <surface>
-               <friction>
-                  <ode>
-                     <mu>100</mu>
-                     <mu2>50</mu2>
-                  </ode>
-               </friction>
-            </surface>
-         </collision>
-         <visual name="visual">
-            <cast_shadows>false</cast_shadows>
-            <geometry>
-               <plane>
-                  <normal>0 0 1</normal>
-                  <size>7.296875 5.621875</size>
-               </plane>
-            </geometry>
-            <material>
-               <script>
-                  <uri>model://map/materials/scripts</uri>
-                  <uri>model://map/materials/textures/</uri>
-                  <name>map/Image</name>
-               </script>
-            </material>
-         </visual>
-      </link>
-    </model>
-  </world>
+      <model name="map">
+         <static>true</static>
+         <pose>3.421875 2.338125 0 0 0 0</pose>
+         <link name="link">
+            <collision name="collision">
+               <geometry>
+                  <plane>
+                     <normal>0 0 1</normal>
+                     <size>7.296875 5.621875</size>
+                  </plane>
+               </geometry>
+               <surface>
+                  <friction>
+                     <ode>
+                        <mu>100</mu>
+                        <mu2>50</mu2>
+                     </ode>
+                  </friction>
+               </surface>
+            </collision>
+            <visual name="visual">
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+                  <plane>
+                     <normal>0 0 1</normal>
+                     <size>7.296875 5.621875</size>
+                  </plane>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://map/materials/scripts</uri>
+                     <uri>model://map/materials/textures/</uri>
+                     <name>map/Image</name>
+                  </script>
+               </material>
+            </visual>
+         </link>
+      </model>
+
+      <model name="crosswalk1">
+         <static>true</static>
+         <pose>1.8 2.6 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://crosswalk/materials/scripts</uri>
+                     <uri>model://crosswalk/materials/textures/</uri>
+                     <name>crosswalk/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="crosswalk2">
+         <static>true</static>
+         <pose>5.0 1.7 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://crosswalk/materials/scripts</uri>
+                     <uri>model://crosswalk/materials/textures/</uri>
+                     <name>crosswalk/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+   </world>
 </sdf>
