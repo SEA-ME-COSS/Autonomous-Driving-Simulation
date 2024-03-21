@@ -42,9 +42,13 @@ This package has been developed and tested on both local machine and Raspberry P
 
 ## Usage
 
-### 1. Launch Gazebo Simulator
+**Gazebo Simulator and Teleoperation Controller are for local environment. While this controller can simultaneously control physical PiRacer, if the purpose is solely simulation, the setup on Raspberry Pi can be disregarded, and only the local environment is utilized.**
 
-❗First, change the `gazebo_model_path` in the **package.xml** located in `simulation_ws/src/sim` to suit your local environment.
+### 0. Package Configuration
+
+Change the `gazebo_model_path` in the **package.xml** located in `simulation_ws/src/sim` to suit your local environment.
+
+### 1. Launch Gazebo Simulator
 
 ```bash
 # Local
