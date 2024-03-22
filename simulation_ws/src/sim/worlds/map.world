@@ -143,5 +143,189 @@
             </visual>
          </link>
       </model>
+
+      <model name="roundabout1">
+         <static>true</static>
+         <pose>3.1 2.15 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://roundabout/materials/scripts</uri>
+                     <uri>model://roundabout/materials/textures/</uri>
+                     <name>roundabout/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="roundabout2">
+         <static>true</static>
+         <pose>3.65 2.15 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://roundabout/materials/scripts</uri>
+                     <uri>model://roundabout/materials/textures/</uri>
+                     <name>roundabout/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="roundabout3">
+         <static>true</static>
+         <pose>3.375 1.875 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://roundabout/materials/scripts</uri>
+                     <uri>model://roundabout/materials/textures/</uri>
+                     <name>roundabout/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="roundabout4">
+         <static>true</static>
+         <pose>3.375 2.425 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.01 0.1 0.1</size>
+               </box>
+               </geometry>
+               <material>
+                  <script>
+                     <uri>model://roundabout/materials/scripts</uri>
+                     <uri>model://roundabout/materials/textures/</uri>
+                     <name>roundabout/Image</name>
+                  </script>
+               </material>
+            </visual>
+            <collision name='pole_collision'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='pole_visual'>
+               <pose>0 0 -0.125 0 0 0</pose>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.005 0.005 0.25</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
    </world>
 </sdf>
