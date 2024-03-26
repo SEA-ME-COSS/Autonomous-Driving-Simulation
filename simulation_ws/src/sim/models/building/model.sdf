@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+
+<sdf version='1.5'>
+   <model name="building">
+      <static>true</static>
+      <link name="link">
+         <collision name='collision'>
+            <geometry>
+            <box>
+               <size>0.33 0.22 0.5</size>
+            </box>
+            </geometry>
+         </collision>
+         <visual name='visual'>
+            <cast_shadows>false</cast_shadows>
+            <geometry>
+            <box>
+               <size>0.33 0.22 0.5</size>
+            </box>
+            </geometry>
+         </visual>
+      </link>
+   </model>
+</sdf>

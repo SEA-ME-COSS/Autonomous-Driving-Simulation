@@ -314,5 +314,314 @@
             </light>
          </plugin>
       </model>
+
+      <model name="building1">
+         <static>true</static>
+         <pose>1 1.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building2">
+         <static>true</static>
+         <pose>2.9 1.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building3">
+         <static>true</static>
+         <pose>1.95 0.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building4">
+         <static>true</static>
+         <pose>1.95 1.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building5">
+         <static>true</static>
+         <pose>1 3.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building6">
+         <static>true</static>
+         <pose>2.9 3.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building7">
+         <static>true</static>
+         <pose>1.95 2.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building8">
+         <static>true</static>
+         <pose>1.95 3.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building9">
+         <static>true</static>
+         <pose>3.9 3.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building10">
+         <static>true</static>
+         <pose>5.8 3.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building11">
+         <static>true</static>
+         <pose>4.85 2.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building12">
+         <static>true</static>
+         <pose>4.85 3.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building13">
+         <static>true</static>
+         <pose>5.8 1.15 0.25 0 0 1.570796</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
+      <model name="building14">
+         <static>true</static>
+         <pose>4.85 0.65 0.25 0 0 0</pose>
+         <link name="link">
+            <collision name='collision'>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </collision>
+            <visual name='visual'>
+               <cast_shadows>false</cast_shadows>
+               <geometry>
+               <box>
+                  <size>0.33 0.22 0.5</size>
+               </box>
+               </geometry>
+            </visual>
+         </link>
+      </model>
+
    </world>
 </sdf>
