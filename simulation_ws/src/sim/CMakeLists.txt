@@ -9,7 +9,19 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
+
+
+add_executable(rviz_position src/rviz_position.cpp)
+ament_target_dependencies(rviz_position rclcpp nav_msgs)
+
+
+install(TARGETS
+  rviz_position
+  DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
   launch
