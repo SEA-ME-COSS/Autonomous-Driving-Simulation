@@ -1,5 +1,13 @@
 # Simulation
 
+| cmd_vel (throttle) | 1.0     | 2.0     | 3.0     | 4.0     | 5.0     |
+|--------------------|---------|---------|---------|---------|---------|
+| <max_speed> 1      | 0.3 m/s | 0.3 m/s | 0.3 m/s | 0.3 m/s | 0.3 m/s |
+| <max_speed> 2      | 0.3 m/s | 0.6 m/s | 0.6 m/s | 0.6 m/s | 0.6 m/s |
+| <max_speed> 3      | 0.3 m/s | 0.6 m/s | 0.9 m/s | 0.9 m/s | 0.9 m/s |
+| <max_speed> 4      | 0.3 m/s | 0.6 m/s | 0.9 m/s | 1.2 m/s | 1.2 m/s |
+| <max_speed> 5      | 0.3 m/s | 0.6 m/s | 0.9 m/s | 1.2 m/s | 1.5 m/s |
+
 ## Note
 
 ```bash
