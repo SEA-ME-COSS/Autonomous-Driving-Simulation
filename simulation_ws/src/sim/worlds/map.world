@@ -100,7 +100,7 @@
 
       <model name="roundabout">
          <static>true</static>
-         <pose>3.85 1.4 0.25 0 0 1.570796</pose>
+         <pose>4.0 1.4 0.25 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
