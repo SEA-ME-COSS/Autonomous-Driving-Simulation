@@ -24,8 +24,8 @@ private:
 
     position.header.frame_id = "odom";
     position.child_frame_id = "base_footprint";
-    position.pose.pose.position.x = msg->pose.pose.position.x * 100 + 22.65626;  // [cm]
-    position.pose.pose.position.y = msg->pose.pose.position.y * 100 + 47.5;  // [cm]
+    position.pose.pose.position.x = msg->pose.pose.position.x * 100;  // [cm]
+    position.pose.pose.position.y = msg->pose.pose.position.y * 100;  // [cm]
     position.pose.pose.position.z = 0.0;
 
     publication_->publish(position);
