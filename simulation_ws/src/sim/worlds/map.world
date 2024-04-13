@@ -15,13 +15,13 @@
 
       <model name="map">
          <static>true</static>
-         <pose>3.221875 2.338125 0 0 0 0</pose>
+         <pose>3.221875 2.34 0 0 0 0</pose>
          <link name="link">
             <collision name="collision">
                <geometry>
                   <plane>
                      <normal>0 0 1</normal>
-                     <size>7.296875 5.621875</size>
+                     <size>7.296875 5.95</size>
                   </plane>
                </geometry>
                <surface>
@@ -38,7 +38,7 @@
                <geometry>
                   <plane>
                      <normal>0 0 1</normal>
-                     <size>7.296875 5.621875</size>
+                     <size>7.296875 5.95</size>
                   </plane>
                </geometry>
                <material>
