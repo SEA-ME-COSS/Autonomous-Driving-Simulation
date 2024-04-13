@@ -481,7 +481,7 @@
 
   <!-- JOINT: chassis -->
   <joint name="chassis_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="-0.1015 0 0" rpy="0 0 0"/>
     <parent link="base_footprint"/>
     <child link="chassis"/>
   </joint>
