@@ -648,7 +648,7 @@
       <right_steering_joint>right_steer_joint</right_steering_joint>
       <steering_wheel_joint>main_steer_joint</steering_wheel_joint>
       
-      <max_steer>0.244</max_steer>
+      <max_steer>0.785</max_steer>
       <max_steering_angle>5.0</max_steering_angle>
       <max_speed>100</max_speed>
 
