@@ -54,7 +54,7 @@
 
       <model name="crosswalk">
          <static>true</static>
-         <pose>5.2 1.9 0.25 0 0 0</pose>
+         <pose>5.75 1.9 0.25 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
@@ -100,7 +100,7 @@
 
       <model name="roundabout">
          <static>true</static>
-         <pose>3.9 1.4 0.25 0 0 1.570796</pose>
+         <pose>3.9 1.55 0.25 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
