@@ -27,6 +27,7 @@ private:
     position.pose.pose.position.x = msg->pose.pose.position.x * 100 + 33;  // [cm]
     position.pose.pose.position.y = msg->pose.pose.position.y * 100 + 50;  // [cm]
     position.pose.pose.position.z = 0.0;
+    position.pose.pose.orientation = msg->pose.pose.orientation;
 
     publication_->publish(position);
   }
