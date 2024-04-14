@@ -58,5 +58,10 @@ def generate_launch_description():
             start_gazebo_client_cmd,
             robot_state_publisher_node,
             spawn_entity,
+            Node(
+                package='tf2_ros',
+                executable='static_transform_publisher',
+                arguments = ['0', '0', '0', '0', '0', '0', 'map', 'odom']
+            ),
         ]
     )
