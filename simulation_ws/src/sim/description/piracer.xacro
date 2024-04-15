@@ -709,7 +709,7 @@
   <gazebo reference="camera">
     <sensor name="camera" type="depth">
       <visualize>false</visualize>
-      <update_rate>5</update_rate>
+      <update_rate>3</update_rate>
       <camera>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
