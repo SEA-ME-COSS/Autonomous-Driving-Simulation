@@ -13,10 +13,11 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 
 
 add_executable(rviz_position src/rviz_position.cpp)
-ament_target_dependencies(rviz_position rclcpp nav_msgs)
+ament_target_dependencies(rviz_position rclcpp nav_msgs tf2)
 
 
 install(TARGETS

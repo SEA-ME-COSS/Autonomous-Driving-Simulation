@@ -2,6 +2,8 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Matrix3x3.h"
 
 using std::placeholders::_1;
 
@@ -27,11 +29,30 @@ private:
     position.header.frame_id = "odom";
     position.child_frame_id = "base_footprint";
 
-    position.pose.pose.position.x = msg->pose.pose.position.x * 100 + 33;  // [cm]
-    position.pose.pose.position.y = msg->pose.pose.position.y * 100 + 50;  // [cm]
+    /*==================================================*/
+    /*       Option1: Gazebo Simulation Odometry        */
+    /*==================================================*/
 
-    // position.pose.pose.position.x = (msg->pose.pose.position.x * 100 + 33) - 9.5 * cos(msg->pose.pose.orientation);  // [cm]
-    // position.pose.pose.position.y = (msg->pose.pose.position.y * 100 + 50) - 9.5 * sin(msg->pose.pose.orientation);  // [cm]
+    // position.pose.pose.position.x = msg->pose.pose.position.x * 100 + 33;  // [cm]
+    // position.pose.pose.position.y = msg->pose.pose.position.y * 100 + 50;  // [cm]
+
+    /*==================================================*/
+    /*          Option2: Real Vehicle Odometry          */
+    /*==================================================*/
+
+    tf2::Quaternion q(
+      msg->pose.pose.orientation.x,
+      msg->pose.pose.orientation.y,
+      msg->pose.pose.orientation.z,
+      msg->pose.pose.orientation.w);
+    tf2::Matrix3x3 m(q);
+    double roll, pitch, yaw;
+    m.getRPY(roll, pitch, yaw);  // [rad]
+
+    position.pose.pose.position.x = (msg->pose.pose.position.x * 100 + 33) - 9.5 * cos(yaw);  // [cm]
+    position.pose.pose.position.y = (msg->pose.pose.position.y * 100 + 50) - 9.5 * sin(yaw);  // [cm]
+
+    /*==================================================*/
 
     position.pose.pose.position.z = 0.0;
     position.pose.pose.orientation = msg->pose.pose.orientation;
