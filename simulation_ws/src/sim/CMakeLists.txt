@@ -16,12 +16,12 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 
 
-add_executable(rviz_position src/rviz_position.cpp)
-ament_target_dependencies(rviz_position rclcpp nav_msgs tf2)
+add_executable(sim_rviz_odom src/sim_rviz_odom.cpp)
+ament_target_dependencies(sim_rviz_odom rclcpp nav_msgs tf2)
 
 
 install(TARGETS
-  rviz_position
+  sim_rviz_odom
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

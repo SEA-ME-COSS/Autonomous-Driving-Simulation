@@ -15,3 +15,10 @@
 cd simulation_ws/src/sim/models
 cp -r * ~/.gazebo/models
 ```
+
+## Usage
+
+```bash
+ros2 launch sim sim.launch.py
+ros2 run teleop controller
+```
