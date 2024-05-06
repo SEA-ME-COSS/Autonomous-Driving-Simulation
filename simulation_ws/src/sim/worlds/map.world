@@ -330,14 +330,14 @@
          </plugin>
       </model>
 
-      <model name="building1">
+      <model name="building1a">
          <static>true</static>
-         <pose>0.95 1.205 0.25 0 0 1.570796</pose>
+         <pose>1.965 1.76 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -345,21 +345,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building2">
+      <model name="building1b">
          <static>true</static>
-         <pose>2.98 1.205 0.25 0 0 1.570796</pose>
+         <pose>1.565 1.76 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -367,21 +367,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building3">
+      <model name="building1c">
          <static>true</static>
-         <pose>1.965 0.65 0.25 0 0 0</pose>
+         <pose>2.365 1.76 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -389,21 +389,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building4">
+      <model name="building2a">
          <static>true</static>
-         <pose>1.965 1.76 0.25 0 0 0</pose>
+         <pose>2.725 3.325 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -411,21 +411,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building5">
+      <model name="building2b">
          <static>true</static>
-         <pose>0.95 3.325 0.25 0 0 1.570796</pose>
+         <pose>2.725 3.725 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -433,21 +433,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building6">
+      <model name="building2c">
          <static>true</static>
-         <pose>2.98 3.325 0.25 0 0 1.570796</pose>
+         <pose>2.725 2.925 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -455,21 +455,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building7">
+      <model name="building3a">
          <static>true</static>
-         <pose>1.965 2.77 0.25 0 0 0</pose>
+         <pose>5.025 2.775 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -477,21 +477,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building8">
+      <model name="building3b">
          <static>true</static>
-         <pose>1.965 3.88 0.25 0 0 0</pose>
+         <pose>4.625 2.775 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -499,21 +499,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building9">
+      <model name="building3c">
          <static>true</static>
-         <pose>4.01 3.325 0.25 0 0 1.570796</pose>
+         <pose>5.425 2.775 0.14 0 0 0</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -521,21 +521,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building10">
+      <model name="building4a">
          <static>true</static>
-         <pose>6.04 3.325 0.25 0 0 1.570796</pose>
+         <pose>4.27 1.21 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -543,21 +543,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building11">
+      <model name="building4b">
          <static>true</static>
-         <pose>5.025 2.77 0.25 0 0 0</pose>
+         <pose>4.27 1.61 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -565,21 +565,21 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
          </link>
       </model>
 
-      <model name="building12">
+      <model name="building4c">
          <static>true</static>
-         <pose>5.025 3.88 0.25 0 0 0</pose>
+         <pose>4.27 0.81 0.14 0 0 1.570796</pose>
          <link name="link">
             <collision name='collision'>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </collision>
@@ -587,51 +587,7 @@
                <cast_shadows>false</cast_shadows>
                <geometry>
                <box>
-                  <size>0.33 0.22 0.5</size>
-               </box>
-               </geometry>
-            </visual>
-         </link>
-      </model>
-
-      <model name="building13">
-         <static>true</static>
-         <pose>6.04 1.205 0.25 0 0 1.570796</pose>
-         <link name="link">
-            <collision name='collision'>
-               <geometry>
-               <box>
-                  <size>0.33 0.22 0.5</size>
-               </box>
-               </geometry>
-            </collision>
-            <visual name='visual'>
-               <cast_shadows>false</cast_shadows>
-               <geometry>
-               <box>
-                  <size>0.33 0.22 0.5</size>
-               </box>
-               </geometry>
-            </visual>
-         </link>
-      </model>
-
-      <model name="building14">
-         <static>true</static>
-         <pose>5.025 0.65 0.25 0 0 0</pose>
-         <link name="link">
-            <collision name='collision'>
-               <geometry>
-               <box>
-                  <size>0.33 0.22 0.5</size>
-               </box>
-               </geometry>
-            </collision>
-            <visual name='visual'>
-               <cast_shadows>false</cast_shadows>
-               <geometry>
-               <box>
-                  <size>0.33 0.22 0.5</size>
+                  <size>0.34 0.26 0.28</size>
                </box>
                </geometry>
             </visual>
