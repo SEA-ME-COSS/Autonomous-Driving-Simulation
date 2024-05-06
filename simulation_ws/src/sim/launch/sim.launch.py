@@ -7,6 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+import launch_ros.actions
 
 import xacro
 
@@ -67,6 +68,22 @@ def generate_launch_description():
                 package='sim',
                 executable='sim_rviz_odom',
                 output='screen',
+            ),
+            Node(
+                package='nav2_map_server',
+                executable='map_server',
+                output='screen',
+                parameters=[{'yaml_filename': "/home/ha/Desktop/Simulation/simulation_ws/src/sim/map/map.yaml"}]
+            ),
+            launch_ros.actions.Node(
+                package='nav2_lifecycle_manager',
+                executable='lifecycle_manager',
+                name='map_lifecycle_manager',  # unique name
+                output='screen',
+                emulate_tty=True,
+                parameters=[{'use_sim_time': True},
+                            {'autostart': True},
+                            {'node_names': ['map_server']}]
             ),
         ]
     )

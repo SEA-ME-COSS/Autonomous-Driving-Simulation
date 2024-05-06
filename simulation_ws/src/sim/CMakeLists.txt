@@ -30,6 +30,7 @@ install(DIRECTORY
   description
   meshes
   models
+  map
   DESTINATION share/${PROJECT_NAME}
 )
 

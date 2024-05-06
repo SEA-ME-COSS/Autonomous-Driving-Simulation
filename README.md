@@ -19,6 +19,7 @@ cp -r * ~/.gazebo/models
 ## Usage
 
 ```bash
+rviz2
 ros2 launch sim sim.launch.py
 ros2 run teleop controller
 ```
