@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-rviz2
+rviz2 -d rviz.rviz
 ros2 launch sim sim.launch.py
 ros2 run teleop controller
 ```

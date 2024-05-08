@@ -16,12 +16,14 @@ def generate_launch_description():
     robot_file = "piracer.xacro"
     package_name = "sim"
     world_file_name = "map.world"
+    map_file_name = "map.yaml"
 
     pkg_path = os.path.join(get_package_share_directory(package_name))
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')
 
     xacro_file = os.path.join(pkg_path, "description", robot_file)
     world_path = os.path.join(pkg_path, "worlds", world_file_name)
+    map_path = os.path.join(pkg_path, "map", map_file_name)
 
     # Start Gazebo server
     start_gazebo_server_cmd = IncludeLaunchDescription(
@@ -73,7 +75,7 @@ def generate_launch_description():
                 package='nav2_map_server',
                 executable='map_server',
                 output='screen',
-                parameters=[{'yaml_filename': "/home/ha/Desktop/Simulation/simulation_ws/src/sim/map/map.yaml"}]
+                parameters=[{'yaml_filename': map_path}]
             ),
             launch_ros.actions.Node(
                 package='nav2_lifecycle_manager',
