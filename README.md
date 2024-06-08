@@ -15,3 +15,5 @@ ros2 run teleop controller
 cd simulation_ws/src/sim/models
 cp -r * ~/.gazebo/models
 ```
+
+change package xml
