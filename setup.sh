@@ -1,13 +1,21 @@
 #!/bin/bash
 
-# Set the path to the source models directory
-SOURCE_DIR="$(pwd)/simulation_ws/src/sim/models"
+CURRENT_DIR=$(pwd)
 
-# Set the path to the Gazebo models directory
+SOURCE_DIR="$CURRENT_DIR/simulation_ws/src/sim/models"
+
 GAZEBO_MODELS_DIR="$HOME/.gazebo/models"
 
-# Copy all models from the source directory to the Gazebo models directory
-cp -r "$SOURCE_DIR"/* "$GAZEBO_MODELS_DIR"
+cp -r "$SOURCE_DIR"/* "$GAZEBO_MODELS_DIR" || { echo "Error: Failed to copy models to $GAZEBO_MODELS_DIR"; exit 1; }
 
-# Print a message indicating the completion of the task
 echo "Models have been successfully copied to $GAZEBO_MODELS_DIR"
+
+PACKAGE_XML_PATH="$CURRENT_DIR/simulation_ws/src/sim/package.xml"
+
+sed -i "s|<gazebo_ros gazebo_model_path = \".*\"/>|<gazebo_ros gazebo_model_path = \"$HOME/.gazebo/models\"/>|g" "$PACKAGE_XML_PATH"
+
+echo "package.xml has been updated with the correct gazebo_model_path"
+
+cd "$CURRENT_DIR/simulation_ws"
+
+echo "Current directory is now $(pwd)/simulation_ws"
