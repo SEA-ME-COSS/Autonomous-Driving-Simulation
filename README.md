@@ -1,5 +1,7 @@
 # Gazebo Simulator
 
+<img src=/images/Architecture_Simulation.png alt="Architecture_Simulation" width="100%" height="100%"/>
+
 This repository is a Gazebo Simulator for the Autonomous Driving System. It was created to test the [ADS project](https://github.com/SEA-ME-COSS/Autonomous-Driving-System.git).
 
 # Requirements
